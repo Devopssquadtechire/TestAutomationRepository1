@@ -33,7 +33,23 @@
   	<dependency>
   		<groupId>org.seleniumhq.selenium</groupId>
   		<artifactId>selenium-java</artifactId>
+  		<exclusions>
+  			<exclusion>
+  				<groupId>org.seleniumhq.selenium</groupId>
+  				<artifactId>selenium-firefox-driver</artifactId>
+  			</exclusion>
+  			<exclusion>
+  				<groupId>org.seleniumhq.selenium</groupId>
+  				<artifactId>selenium-safari-driver</artifactId>
+  			</exclusion>
+  		</exclusions>
   	</dependency>
+  	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>6.14.2</version>
+	    <scope>test</scope>
+</dependency>
   </dependencies>
   <dependencyManagement>
   	<dependencies>
